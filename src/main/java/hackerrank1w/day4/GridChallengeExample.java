@@ -1,4 +1,4 @@
-package hackerrank1w.day3;
+package hackerrank1w.day4;
 
 import java.util.Arrays;
 import java.util.List;
