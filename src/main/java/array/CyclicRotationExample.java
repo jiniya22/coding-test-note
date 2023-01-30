@@ -13,8 +13,24 @@ public class CyclicRotationExample {
         int[] arr2 = {1, 2, 3, 4};
         printArray(cyclicRotation(arr2, 4));
     }
-
     static int[] cyclicRotation(int[] A, int K) {
+        if (A == null || A.length < 1) {
+            return A;
+        }
+        int[] result = new int[A.length];
+        K %= A.length;
+
+        for (int i = 0; i < A.length; i++) {
+            if (i + K < A.length) {
+                result[i + K] = A[i];
+            } else {
+                result[i + K - A.length] = A[i];
+            }
+        }
+        return result;
+    }
+
+    static int[] cyclicRotation2(int[] A, int K) {
         if (A == null || A.length < 1) {
             return A;
         }

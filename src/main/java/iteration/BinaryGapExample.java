@@ -12,6 +12,31 @@ public class BinaryGapExample {
     }
 
     static int binaryGap(int N) {
+        if(N < 2) return 0;
+
+        int result = 0;
+        char[] arr = Integer.toBinaryString(N).toCharArray();
+
+        boolean flag = false;
+        int temp = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if(!flag && arr[i] == '0') continue;
+
+            if(arr[i] == '1') {
+                flag = true;
+                if(result < temp) {
+                    result = temp;
+                }
+                temp = 0;
+            } else {
+                temp++;
+            }
+        }
+        return result;
+    }
+
+    static int binaryGap2(int N) {
         if (N <= 1) {
             return 0;
         }
