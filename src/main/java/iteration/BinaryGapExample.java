@@ -1,8 +1,5 @@
 package iteration;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class BinaryGapExample {
     public static void main(String[] args) {
         System.out.println(binaryGap(529));
@@ -13,50 +10,26 @@ public class BinaryGapExample {
 
     static int binaryGap(int N) {
         if(N < 2) return 0;
-
+        String s = Integer.toBinaryString(N);
         int result = 0;
-        char[] arr = Integer.toBinaryString(N).toCharArray();
 
         boolean flag = false;
         int temp = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            if(!flag && arr[i] == '0') continue;
-
-            if(arr[i] == '1') {
+        for (char i : s.toCharArray()) {
+            if (i == '0') {
+                if(!flag) {
+                    continue;
+                }
+                temp++;
+            } else {
                 flag = true;
-                if(result < temp) {
+                if (temp > result) {
                     result = temp;
                 }
                 temp = 0;
-            } else {
-                temp++;
             }
         }
         return result;
     }
 
-    static int binaryGap2(int N) {
-        if (N <= 1) {
-            return 0;
-        }
-        int result = 0;
-        char[] arr = Integer.toBinaryString(N).toCharArray();
-        List<Integer> index = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == '1') {
-                index.add(i);
-            }
-        }
-        if (index.size() < 2) {
-            return 0;
-        }
-        for (int i = 0; i < index.size() - 1; i++) {
-            int value = index.get(i + 1) - index.get(i) - 1;
-            if (result < value) {
-                result = value;
-            }
-        }
-        return result;
-    }
 }
