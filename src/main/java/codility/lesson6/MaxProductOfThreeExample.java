@@ -11,7 +11,6 @@ public class MaxProductOfThreeExample {
         Arrays.sort(A);
         int r1 = A[0] * A[1] * A[A.length - 1];
         int r2 = A[A.length - 1] * A[A.length - 2] * A[A.length - 3];
-
-        return r1 > r2 ? r1 : r2;
+        return Math.max(r1, r2);
     }
 }
