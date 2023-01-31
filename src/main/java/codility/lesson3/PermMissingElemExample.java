@@ -7,14 +7,14 @@ public class PermMissingElemExample {
 
     static int permMissingElem(int[] A) {
         int result = 0;
-        int[] arr = new int[A.length + 2];
-        for (int a : A) {
-            arr[a] = 1;
+        int[] arr = new int[A.length + 1];
+        for (int i : A) {
+            arr[i - 1] = 1;
         }
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
-               result = i;
-               break;
+                result = i + 1;
+                break;
             }
         }
         return result;
