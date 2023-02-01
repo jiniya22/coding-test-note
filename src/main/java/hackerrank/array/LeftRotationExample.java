@@ -13,6 +13,15 @@ public class LeftRotationExample {
         System.out.println(rotRight(new ArrayList<>(List.of(1, 2, 3, 4)), 4));
         System.out.println(rotRight(new ArrayList<>(List.of(1, 2, 3, 4)), 3));
 
+        System.out.println();
+
+        System.out.println(rotLeft(new ArrayList<>(List.of(3, 8, 9, 7, 6)), 0));
+        System.out.println(rotLeft(new ArrayList<>(List.of(3, 8, 9, 7, 6)), 1));
+        System.out.println(rotLeft(new ArrayList<>(List.of(3, 8, 9, 7, 6)), 2));
+        System.out.println(rotLeft(new ArrayList<>(List.of(3, 8, 9, 7, 6)), 3));
+
+        System.out.println();
+
         System.out.println(rotRight(new ArrayList<>(List.of(3, 8, 9, 7, 6)), 0));
         System.out.println(rotRight(new ArrayList<>(List.of(3, 8, 9, 7, 6)), 1));
         System.out.println(rotRight(new ArrayList<>(List.of(3, 8, 9, 7, 6)), 2));
