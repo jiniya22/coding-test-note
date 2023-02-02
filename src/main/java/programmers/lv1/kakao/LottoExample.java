@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * 로또의 최고 순위와 최저 순위
- * https://school.programmers.co.kr/learn/courses/30/lessons/77484
+ * <a href="https://school.programmers.co.kr/learn/courses/30/lessons/77484">...</a>
  */
 public class LottoExample {
     public static void main(String[] args) {
