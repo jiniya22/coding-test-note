@@ -2,6 +2,9 @@ package string;
 
 import util.CommonUtils;
 
+/**
+ * 문자열에서 공백 제거하기
+ */
 public class RemoveWhitespacesFromStringExample {
 
     public static void main(String[] args) {

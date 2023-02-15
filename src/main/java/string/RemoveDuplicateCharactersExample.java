@@ -7,6 +7,9 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * 중복 문자 제거하기
+ */
 public class RemoveDuplicateCharactersExample {
 
     public static void main(String[] args) {

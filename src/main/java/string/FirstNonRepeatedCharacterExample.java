@@ -2,6 +2,9 @@ package string;
 
 import util.CommonUtils;
 
+/**
+ * 첫번째 유니크 문자 찾기
+ */
 public class FirstNonRepeatedCharacterExample {
 
     public static void main(String[] args) {

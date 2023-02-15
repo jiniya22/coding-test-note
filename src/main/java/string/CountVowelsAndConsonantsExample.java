@@ -6,6 +6,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * 모음, 자음 세기
+ */
 public class CountVowelsAndConsonantsExample {
 
     private static final Set<Character> VOWELS = new HashSet(List.of('a', 'e', 'i', 'o', 'u'));

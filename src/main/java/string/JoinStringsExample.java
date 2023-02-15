@@ -4,6 +4,9 @@ import util.CommonUtils;
 
 import java.util.StringJoiner;
 
+/**
+ * 여러 문자열 합치기
+ */
 public class JoinStringsExample {
 
     private static final String TEXT_1 = "APple";
