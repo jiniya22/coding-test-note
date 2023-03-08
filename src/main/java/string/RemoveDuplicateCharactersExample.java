@@ -34,7 +34,7 @@ public class RemoveDuplicateCharactersExample {
     }
 
     static String removeDuplicates1(String s) {
-        if (s.isBlank()) {
+        if (s == null || s.isBlank()) {
             return s;
         }
         StringBuilder sb = new StringBuilder();
@@ -47,7 +47,7 @@ public class RemoveDuplicateCharactersExample {
     }
 
     static String removeDuplicates2(String s) {
-        if (s.isBlank()) {
+        if (s == null || s.isBlank()) {
             return s;
         }
         StringBuilder sb = new StringBuilder();
@@ -61,7 +61,7 @@ public class RemoveDuplicateCharactersExample {
     }
 
     static String removeDuplicates3(String s) {
-        if (s.isBlank()) {
+        if (s == null || s.isBlank()) {
             return s;
         }
         return Arrays.asList(s.split("")).stream()
